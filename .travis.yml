@@ -9,7 +9,7 @@ install:
 script:
   - (cd test && ./runtests.sh) # Run Shell | I/O tests
   - ./gradlew -b build.gradle.txt clean test checkstyleMain checkstyleTest # JUnit test and runs checkstyle
-  - ./gradlew -b build.gradle.txt asciidoctor # Documentation
+#  - ./gradlew -b build.gradle.txt asciidoctor # Documentation
 
 deploy:
   skip_cleanup: true
